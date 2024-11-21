@@ -7,6 +7,11 @@ def speed():
     print("Скорость равна {0} км/ч".format(round(v, 2)))
 
 
+def frequency():
+    print("Введите период колебаний в секундах")
+    T = float(input())
+    v = 1 / T
+    print("Частота колебаний равна {0} Гц".format(round(v, 2)))
 print("Введите число для выбора задачи")
 print("Задача 1: Определение скорости")
 print("Задача 2: Определение массы")
@@ -21,3 +26,6 @@ print("Задача 10: Определение объема")
 number = int(input())
 if number == 1:
     speed()
+
+if number == 9:
+    frequency()
