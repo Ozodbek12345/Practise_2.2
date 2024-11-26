@@ -13,14 +13,11 @@ def speed():
     t = float(input())
     v = s/t
     print("Скорость равна {0} км/ч".format(round(v, 2)))
-
 def frequency():
     print("Введите период колебаний в секундах")
     T = float(input())
     v = 1 / T
     print("Частота колебаний равна {0} Гц".format(round(v, 2)))
-
-
 def Heat():
     print("Введите массу в килограммах")
     m = float(input())
@@ -51,8 +48,6 @@ def mass():
     a = float(input())
     m = F/a
     print("Масса равна {0} кг".format(round(m, 2)))
-
-
 def Energy_pot():
     print("Введите массу в килограммах")
     m = float(input())
@@ -67,6 +62,13 @@ def temp_from_F_to_C():
     t = float(input())
     T = (t - 32) * 5/9
     print("температура равна {0} гралусов по Цельсия".format(round(T, 2)))
+def work():
+    print("Введите силу в ньютонах")
+    F = float(input())
+    print("Введите расстояние в метрах")
+    S = float(input())
+    A = F * S
+    print("Работа равна {0} Дж".format(round(A, 2)))
 print("Введите число для выбора задачи")
 print("Задача 1: Определение скорости")
 print("Задача 2: Определение массы")
@@ -83,6 +85,8 @@ if number == 2:
     mass()
 if number == 3:
     temp_from_F_to_C()
+if number == 4:
+    work()
 if number == 5:
     Energy_kin()
 if number == 6:
@@ -91,4 +95,3 @@ if number == 7:
     pressure()
 if number == 8:
     Heat()
-
