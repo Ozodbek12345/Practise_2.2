@@ -30,6 +30,13 @@ def Heat():
     delta_t = float(input())
     Q = c * m * delta_t
     print("Количество теплоты равно {0} Дж".format(round(Q, 2)))
+def pressure():
+    print("Введите силу в ньютонах")
+    F = float(input())
+    print("Введите площадь в квадратных метрах")
+    S = float(input())
+    p = F / S
+    print("Давление равно {0} Па".format(round(p, 2)))
 print("Введите число для выбора задачи")
 print("Задача 1: Определение скорости")
 print("Задача 2: Определение массы")
@@ -42,5 +49,7 @@ print("Задача 8: Определение теплоты")
 print("Задача 9: Определение частоты")
 print("Задача 10: Определение объема")
 number = int(input())
+if number == 7:
+    pressure()
 if number == 8:
     Heat()
