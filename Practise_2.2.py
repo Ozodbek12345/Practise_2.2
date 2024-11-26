@@ -1,3 +1,11 @@
+import math
+def volume():
+    print("Введите радиус цилиндра в метрах")
+    r = float(input())
+    print("Введите высоту цилиндра в метрах")
+    h = float(input())
+    V = h * math.pi * r**2
+    print("Объем цилиндра равен {0} метр в кубе".format(round(V, 2)))
 def speed():
     print("Введите расстояние в километрах")
     s = float(input())
@@ -24,15 +32,4 @@ print("Задача 7: Определение давления")
 print("Задача 8: Определение теплоты")
 print("Задача 9: Определение частоты")
 print("Задача 10: Определение объема")
-
-# functions = [speed, func2, func3, func4, func5, func6, func7, func8, func9, frequency]
-functions = [speed, ]
-
 number = int(input())
-functions[number - 1]()
-
-# if number == 1:
-#     speed()
-#
-# if number == 9:
-#     frequency()
