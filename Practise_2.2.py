@@ -44,6 +44,15 @@ def Energy_kin():
     v = float(input())
     Ek = m * (v)**2 / 2
     print("Кинетическая энергия равна {0} Дж".format(round(Ek, 2)))
+def mass():
+    print("Введите силу в ньютонах")
+    F = float(input())
+    print("Введите ускорение в метрах в секунду")
+    a = float(input())
+    m = F/a
+    print("Масса равна {0} кг".format(round(m, 2)))
+
+
 print("Введите число для выбора задачи")
 print("Задача 1: Определение скорости")
 print("Задача 2: Определение массы")
@@ -56,6 +65,8 @@ print("Задача 8: Определение теплоты")
 print("Задача 9: Определение частоты")
 print("Задача 10: Определение объема")
 number = int(input())
+if number == 2:
+    mass()
 if number == 5:
     Energy_kin()
 if number == 7:
