@@ -62,6 +62,11 @@ def Energy_pot():
     g = float(input())
     Ep = m * g * h
     print("Потенциальная энергия равна {0} Дж".format(round(Ep, 2)))
+def temp_from_F_to_C():
+    print("Введите температуру в градусах Фаренгейта")
+    t = float(input())
+    T = (t - 32) * 5/9
+    print("температура равна {0} гралусов по Цельсия".format(round(T, 2)))
 print("Введите число для выбора задачи")
 print("Задача 1: Определение скорости")
 print("Задача 2: Определение массы")
@@ -76,6 +81,8 @@ print("Задача 10: Определение объема")
 number = int(input())
 if number == 2:
     mass()
+if number == 3:
+    temp_from_F_to_C()
 if number == 5:
     Energy_kin()
 if number == 6:
@@ -84,3 +91,4 @@ if number == 7:
     pressure()
 if number == 8:
     Heat()
+
