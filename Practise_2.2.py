@@ -53,6 +53,15 @@ def mass():
     print("Масса равна {0} кг".format(round(m, 2)))
 
 
+def Energy_pot():
+    print("Введите массу в килограммах")
+    m = float(input())
+    print("Введите высоту в метрах")
+    h = float(input())
+    print("Введите ускорение свободного падения")
+    g = float(input())
+    Ep = m * g * h
+    print("Потенциальная энергия равна {0} Дж".format(round(Ep, 2)))
 print("Введите число для выбора задачи")
 print("Задача 1: Определение скорости")
 print("Задача 2: Определение массы")
@@ -69,6 +78,8 @@ if number == 2:
     mass()
 if number == 5:
     Energy_kin()
+if number == 6:
+    Energy_pot()
 if number == 7:
     pressure()
 if number == 8:
