@@ -37,6 +37,13 @@ def pressure():
     S = float(input())
     p = F / S
     print("Давление равно {0} Па".format(round(p, 2)))
+def Energy_kin():
+    print("Введите массу в килограммах")
+    m = float(input())
+    print("Введите скорость в метрах в секунду")
+    v = float(input())
+    Ek = m * (v)**2 / 2
+    print("Кинетическая энергия равна {0} Дж".format(round(Ek, 2)))
 print("Введите число для выбора задачи")
 print("Задача 1: Определение скорости")
 print("Задача 2: Определение массы")
@@ -49,6 +56,8 @@ print("Задача 8: Определение теплоты")
 print("Задача 9: Определение частоты")
 print("Задача 10: Определение объема")
 number = int(input())
+if number == 5:
+    Energy_kin()
 if number == 7:
     pressure()
 if number == 8:
